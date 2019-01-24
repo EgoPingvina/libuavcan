@@ -16,12 +16,14 @@
 #endif
 
 #ifndef UAVCAN_STM32_BAREMETAL
-# define UAVCAN_STM32_BAREMETAL 0
+# define UAVCAN_STM32_BAREMETAL 1
 #endif
 
 #ifndef UAVCAN_STM32_FREERTOS
 # define UAVCAN_STM32_FREERTOS 0
 #endif
+
+#define UAVCAN_STM32_NUM_IFACES 1
 
 /**
  * Number of interfaces must be enabled explicitly
@@ -36,5 +38,5 @@
  */
 #ifndef UAVCAN_STM32_TIMER_NUMBER
 // In this case the clock driver should be implemented by the application
-# define UAVCAN_STM32_TIMER_NUMBER 0
+# define UAVCAN_STM32_TIMER_NUMBER 2
 #endif
